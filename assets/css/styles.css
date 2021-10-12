@@ -190,7 +190,7 @@ h6 {
     line-height: 17px;
 }
 
-.user button {
+.dotdotdot_user {
     display: flex;
     padding: 0;
     border: none;
@@ -198,12 +198,12 @@ h6 {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
-    max-height: 6px;
+    max-height: 3px;
     min-width: 16px;
     margin: 38px 0 0 0;
 }
 
-.user button div {
+.dotdotdot_user div {
     min-height: 4px;
     min-width: 4px;
     background-color: #D8D8D8;
