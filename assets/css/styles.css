@@ -132,7 +132,7 @@ h6 {
     max-width: 730px;
     background-color: #FFFFFF;
     border-radius: 8px;
-    margin:0 auto;
+    margin:15px auto;
     padding: 30px 10px;
 }
 
@@ -143,11 +143,11 @@ h6 {
 }
 
 .logo {
-    margin: 32.5px 13px 32.6px 30.4px;
+    margin: 32.5px 13px 32.6px 20.4px;
 }
 
 .Projectus h1 {
-    margin: auto;
+    margin: 30px 0 0 13px;
     font-family: Helvetica;
     font-size: 16px;
     color: #FFFFFF;
@@ -397,7 +397,6 @@ h6 {
 .content_zone{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .date{
@@ -409,19 +408,19 @@ h6 {
     margin: 30px 0 0 35px;
     line-height: 19px;
 }
-.content1 .icon_bg{
+.checked_ms{
     background-color: #CEF9C6;
     height: 40px;
     width: 40px;
     border-radius: 100%;
 }
-.content2 .icon_bg{
+.comment_ms{
     background-color: #FFF8DD;
     height: 40px;
     width: 40px;
     border-radius: 100%;
 }
-.content3 .icon_bg{
+.upload_ms{
     background-color: #E3EFFF;
     height: 40px;
     width: 40px;
@@ -485,3 +484,28 @@ h6 {
 .images img{
     border-radius: 8px;
 }
+
+/* icons */
+
+.Projectus h1:after {
+    content: url("/assets/img/Search@3x.svg");
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 0 82px;
+}
+.checked_ms:after{
+    content: url("/assets/img/Icon@3x.svg");
+    margin: 14px 0 0 14px;
+    position: absolute;
+}
+.comment_ms:after{
+    content: url("/assets/img/Icon@3x.svg");
+    margin: 14px 0 0 14px;
+    position: absolute;
+}
+.upload_ms:after{
+    content: url("/assets/img/Icon@3x.svg");
+    margin: 14px 0 0 14px;
+    position: absolute;
+}
+

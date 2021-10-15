@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1xwuNWUKKdVrGnQf7Ec5DQNsO4X" />
@@ -39,6 +44,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Onix-Test" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +66,8 @@
       <workItem from="1633094399347" duration="4533000" />
       <workItem from="1633182095436" duration="1517000" />
       <workItem from="1634052246684" duration="685000" />
+      <workItem from="1634239477062" duration="2075000" />
+      <workItem from="1634292336790" duration="1068000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1633183372412</created>
