@@ -113,7 +113,7 @@ h6 {
 }
 
 .header {
-    flex: 0 0 136px;
+    max-height: 136px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -121,18 +121,20 @@ h6 {
 
 .content_zone{
     display: flex;
+    justify-content: center;
     min-width: 100%;
     min-height: 100%;
+    align-items: flex-start;
 
 }
 .content_box{
-    display: flex;
+    display:flex;
     flex-direction: column;
     width: 100%;
     max-width: 730px;
     background-color: #FFFFFF;
     border-radius: 8px;
-    margin:15px auto;
+    margin:30px auto;
     padding: 30px 10px;
 }
 
@@ -140,39 +142,37 @@ h6 {
     min-width: 100%;
     min-height: 84px;
     display: flex;
+    position: relative;
 }
 
 .logo {
-    margin: 32.5px 13px 32.6px 20.4px;
+    margin: 32.5px 0 32.6px 20.4px;
 }
 
 .Projectus h1 {
-    margin: 30px 0 0 13px;
+    margin: 31px 0 0 13px;
     font-family: Helvetica;
     font-size: 16px;
     color: #FFFFFF;
     line-height: 24px;
 }
 
-.search {
-    margin: 33px 20px 35px 82px;
-    cursor: pointer;
-}
 
 .user {
     flex: 0 0 80px;
     background-color: #202020;
     display: flex;
+    position: relative;
 }
 
 .user_avatar {
     border-radius: 100px;
     border: 0px solid #202020;
-    margin: 16px 15px 16px 30px;
+    margin: 16px 0 16px 30px;
 }
 
 .user_info {
-    margin: 20px 49px 22px 15px;
+    margin: 20px 0 0 15px;
 }
 
 .user_name {
@@ -191,6 +191,8 @@ h6 {
 }
 
 .dotdotdot_user {
+    position: absolute;
+    right: 0;
     display: flex;
     padding: 0;
     border: none;
@@ -200,7 +202,7 @@ h6 {
     cursor: pointer;
     max-height: 3px;
     min-width: 16px;
-    margin: 38px 0 0 0;
+    margin: 38px 20px 0 0;
 }
 
 .dotdotdot_user div {
@@ -218,6 +220,15 @@ h6 {
     align-items: center;
     min-height: 141px;
 }
+
+.completed{
+    cursor: pointer;
+}
+
+.open{
+    cursor: pointer;
+}
+
 
 .tasks li {
     opacity: 0.5;
@@ -268,7 +279,7 @@ h6 {
     font-family: Helvetica;
     font-size: 13px;
     color: #131313;
-    margin: 4px 0 0 6px;
+    margin: 2px 0 0 6px;
     line-height: 18px;
 }
 
@@ -305,7 +316,7 @@ h6 {
 .dotdotdot div {
     height: 4px;
     min-width: 4px;
-    background-color: #D8D8D8;
+    background-color: #808080;
     border-radius: 100%;
     margin: 13px 1px 13px 1px;
 }
@@ -340,6 +351,8 @@ h6 {
     color: #131313;
 }
 .chat_but{
+    position: relative;
+    display: flex;
     height: 30px;
     width: 81px;
     background: #FFF8DD;
@@ -348,8 +361,9 @@ h6 {
     margin: 45px 30px 0 15px;
     cursor: pointer;
 }
+
 .chat_but div{
-    margin: 7px 14px 7px 15px;
+    margin: 7px 0 0 36px;
     font-family: Helvetica;
     font-size: 14px;
     color: #FFC200;
@@ -382,7 +396,7 @@ h6 {
     width: 100%;
     height: 3px;
     background-color: #FFC200;
-    margin:17px 0 0 0;
+    margin:11px 0 0 0;
 }
 .nav__link:hover:after, .nav__link.active:after{
     display: block;
@@ -393,11 +407,6 @@ h6 {
     opacity: 1;
 }
 
-
-.content_zone{
-    display: flex;
-    justify-content: center;
-}
 
 .date{
     opacity: 0.5;
@@ -430,16 +439,19 @@ h6 {
     display: flex;
     margin: 32px 0 0 30px;
     flex-wrap: wrap;
+    position: relative;
 }
 .content2{
     display: flex;
     margin: 32px 0 0 30px;
     flex-wrap: wrap;
+    position: relative;
 }
 .content3{
     display: flex;
     margin: 32px 0 0 30px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .content1 img{
@@ -466,21 +478,29 @@ h6 {
     color: #131313;
     text-align: right;
     line-height: 20px;
-    margin-left: 96px;
+    right: 0;
+    position: absolute;
+    padding-right: 30px;
 }
 .comment{
     max-width: 551px;
-    max-height: 88px;
+    min-height: 88px;
     background: #F7F6F3;
     border-radius: 10px;
-    margin: 60px 0 0 61px;
+    margin: 20px 0 0 61px;
 }
 .comment p{
     font-family: Helvetica;
     font-size: 15px;
     color: #131313;
     margin: 20px 0 20px 30px;
+    line-height: 24px;
 }
+
+.images{
+    margin: 0 0 0 60px;
+}
+
 .images img{
     border-radius: 8px;
 }
@@ -491,7 +511,15 @@ h6 {
     content: url("/assets/img/Search@3x.svg");
     display: inline-block;
     position: absolute;
-    margin: 0 0 0 82px;
+    right: 0;
+    margin: 0 20px 0 auto;
+    cursor: pointer;
+}
+.chat_but div:before{
+    content: url("/assets/img/Combined Shape@1x.svg");
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
 }
 .checked_ms:after{
     content: url("/assets/img/Icon@3x.svg");

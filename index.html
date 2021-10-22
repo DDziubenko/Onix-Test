@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/index.js" rel="script"></script>
   <title>Title</title>
@@ -26,17 +27,17 @@
       </div> <!-- dotdotdot -->
     </div>
     <div class="tasks">
-      <ul>
-        <li class="counter">372</li>
+      <ul class="completed">
+        <li class="counter" id="completedCounter">372</li>
         <li>Completed Tasks</li>
       </ul>
-      <ul>
-        <li class="counter">11</li>
+      <ul class="open">
+        <li class="counter" id="openCounter">11</li>
         <li>Open Tasks</li>
       </ul>
     </div>
     <div class="navigation">
-      <div class="notifications"><p>3</p></div>
+      <div class="notifications" ><p id="notif">3</p></div>
       <ul>
         <li class="menu">MENU</li>
 
@@ -71,7 +72,7 @@
           <div>Share</div>
         </div>
         <div class="chat_but">
-          <div><img src="assets/img/Combined%20Shape@1x.svg" alt="chat_logo">Chat</div>
+          <div>Chat</div>
         </div>
       </div>
       <div class="slider">
@@ -118,11 +119,8 @@
           <p class="text">Darika Samak uploaded 4 files on An option to search in current projects or in all projects</p>
           <p class="time">6:02 PM</p>
           <div class="comment"></div>
-          <div class="images">
-            <img src="assets/img/Picture.png" width="100" height="100" alt="picture">
-            <img src="assets/img/Picture.png" width="100" height="100" alt="picture">
-            <img src="assets/img/Picture.png" width="100" height="100" alt="picture">
-            <img src="assets/img/Picture.png" width="100" height="100" alt="picture">
+          <div class="images" id="imgContainer">
+
           </div>
         </div>
       </div>
