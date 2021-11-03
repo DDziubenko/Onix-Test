@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="icons">
+    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue-pug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/activity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/activity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,78 +18,73 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="in_work" />
+        <entry key="$PROJECT_DIR$" value="jsLEsson" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1xwuNWUKKdVrGnQf7Ec5DQNsO4X" />
+  <component name="ProjectId" id="208SaZM0ZwF3yfIiQMOlqqan0iv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Onix-Test" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ts.external.directory.path" value="D:\Onix-Test\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Onix-Test" />
+      <recent name="D:\projects\vueonix\src\assets\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="" />
-      <created>1631278431231</created>
+      <changelist id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue" />
+      <created>1635424786864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631278431231</updated>
-      <workItem from="1631278432437" duration="5270000" />
-      <workItem from="1632394469901" duration="2353000" />
-      <workItem from="1632650549835" duration="17175000" />
-      <workItem from="1632670195556" duration="219000" />
-      <workItem from="1632827424814" duration="5878000" />
-      <workItem from="1633007178619" duration="7820000" />
-      <workItem from="1633094399347" duration="4533000" />
-      <workItem from="1633182095436" duration="1517000" />
-      <workItem from="1634052246684" duration="685000" />
-      <workItem from="1634239477062" duration="2075000" />
-      <workItem from="1634292336790" duration="1692000" />
-      <workItem from="1634296098339" duration="1000" />
-      <workItem from="1634562021756" duration="3093000" />
-      <workItem from="1634727875653" duration="7974000" />
-      <workItem from="1634909740867" duration="3149000" />
+      <updated>1635424786864</updated>
+      <workItem from="1635424789342" duration="6795000" />
+      <workItem from="1635435835203" duration="590000" />
+      <workItem from="1635436440861" duration="5337000" />
+      <workItem from="1635500667142" duration="7595000" />
+      <workItem from="1635511730861" duration="242000" />
+      <workItem from="1635584776832" duration="538000" />
+      <workItem from="1635863543891" duration="594000" />
+      <workItem from="1635935024286" duration="1187000" />
+      <workItem from="1635945191430" duration="734000" />
     </task>
-    <task id="LOCAL-00001" summary="init commit">
-      <created>1633183372412</created>
+    <task id="LOCAL-00001" summary="vue">
+      <created>1635512358110</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1633183372412</updated>
+      <updated>1635512358110</updated>
     </task>
-    <task id="LOCAL-00002" summary="icons">
-      <created>1634293439009</created>
+    <task id="LOCAL-00002" summary="vue-pug">
+      <created>1635935808948</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1634293439009</updated>
+      <updated>1635935808948</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -107,8 +105,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit" />
-    <MESSAGE value="icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="icons" />
+    <MESSAGE value="vue" />
+    <MESSAGE value="vue-pug" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue-pug" />
   </component>
 </project>

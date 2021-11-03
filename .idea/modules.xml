@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/test_prj_Onyx.iml" filepath="$PROJECT_DIR$/.idea/test_prj_Onyx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vueonix.iml" filepath="$PROJECT_DIR$/.idea/vueonix.iml" />
     </modules>
   </component>
 </project>
