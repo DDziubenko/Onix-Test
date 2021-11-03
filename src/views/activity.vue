@@ -1,20 +1,16 @@
-<template>
-  <div class="content_box">
-    <div class="date">
-      <h2>Today</h2>
-    </div>
+<template lang="pug">
+.content_box
+  .date
+    h2 Today
+  div(:class="'content'+ (index+1)" v-for='(el, index) in content' :key='index')
+    div(:class='el.class')
+    p.text {{el.text}}
+    p.time {{el.time}}
+    .comment(v-if='el.comment')
+      p {{el.comment}}
+    .images(v-if='el.images')
+      img(v-for='(img, i) in el.images' :key='i' :src='img' @click='changeNotif(i)' alt='image')
 
-    <div :class="'content'+ (index+1)" v-for="(el, index) in content" :key="index">
-      <div :class="el.class">
-      </div>
-      <p class="text">{{el.text}}</p>
-      <p class="time">{{el.time}}</p>
-      <div class="comment" v-if="el.comment"><p>{{el.comment}}</p></div>
-      <div class="images" v-if="el.images">
-        <img v-for="(img, i) in el.images" :key="i" :src="img" @click="changeNotif(i)" alt="image">
-      </div>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">

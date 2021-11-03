@@ -1,8 +1,8 @@
 <template lang="pug">
-  .content_box
-    .content(v-for='(element, index) in tasks' :key='index')
-      h1.task_name(@click='showModal') {{element.taskName}}
-    tasks-modal(v-show='isModalVisible' @close='closeModal')
+.content_box
+  .content(v-for='(element, index) in tasks' :key='index')
+    h1.task_name(@click='showModal') {{element.taskName}}
+  tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
 

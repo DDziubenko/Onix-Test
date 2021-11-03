@@ -1,19 +1,19 @@
 <template lang="pug">
-  .modal-backdrop
-    .modal
-      header.modal-header
-        slot(name='header')
-          | 12312312312312321313
-          button.btn-close(type='button' @click='close')
-            | x
-      section.modal-body
-        slot(name='body')
-          | Description
-      footer.modal-footer
-        | Date: 29.10.21
-        slot(name='footer')
-          button.btn-green(type='button' @click='close')
-            | Close task
+.modal-backdrop
+  .modal
+    header.modal-header
+      slot(name='header')
+        | 12312312312312321313
+        button.btn-close(type='button' @click='close')
+          | x
+    section.modal-body
+      slot(name='body')
+        | Description
+    footer.modal-footer
+      | Date: 29.10.21
+      slot(name='footer')
+        button.btn-green(type='button' @click='close')
+          | Close task
 
 </template>
 
