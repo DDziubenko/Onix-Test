@@ -1,84 +1,61 @@
-<template>
-  <div class="wrapper">
-    <div class="sidebar">
-      <div class="Projectus">
-        <img class="logo" src="./assets/img/Logo@3x.svg" alt="logo">
-        <h1>PROJECTUS</h1>
-      </div>
-      <div class="user" id="user">
-        <img class="user_avatar" :src="User.image"  alt="user_avatar">
-        <ul class="user_info">
-          <li class="user_name">{{ User.name }}</li>
-          <li class="user_status">{{ User.status }}</li>
-        </ul>
-        <div class="dotdotdot_user">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> <!-- dotdotdot -->
-      </div>
-      <div class="tasks">
-        <ul class="completed" @click="changeTasks">
-          <li class="counter">{{ completedCount }}</li>
-          <li>Completed Tasks</li>
-        </ul>
-        <ul class="open">
-          <li class="counter">{{ openCount }}</li>
-          <li>Open Tasks</li>
-        </ul>
-      </div>
-      <div class="navigation">
-        <div class="notifications"><p>{{notifications}}</p></div>
-        <ul>
-          <li class="menu">MENU</li>
-
-          <li class="menu_li">Home</li>
-
-          <li class="menu_li">My Tasks</li>
-
-          <li class="menu_li">Notification</li>
-
-        </ul>
-      </div>
-    </div>
-    <div class="container_column">
-      <div class="header">
-        <div class="main_header">
-          <img class="shapes" width="40" height="40" alt="logo" src="./assets/img/Shapes@2x.png">
-          <h1>Website Redesign</h1>
-          <div class="dotdotdot">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="empty"></div>
-          <div class="active_users">
-            <img alt="user" src="./assets/img/user_avatar_small.svg">
-            <img alt="user" src="./assets/img/user_avatar_small.svg">
-            <img alt="user" src="./assets/img/user_avatar_small.svg">
-          </div>
-          <div class="share_but">
-            <div>Share</div>
-          </div>
-          <div class="chat_but">
-            <div>Chat</div>
-          </div>
-        </div>
-        <div class="slider">
-          <nav class="nav">
-            <router-link class="nav__link" to="/tasks">Tasks</router-link>
-            <router-link class="nav__link" to="/kanban">Kanban</router-link>
-            <router-link class="nav__link" to="/activity">Activity</router-link>
-            <router-link class="nav__link" to="/calendar">Calendar</router-link>
-            <router-link class="nav__link" to="/files">Files</router-link>
-          </nav>
-        </div>
-      </div>
-      <div class="content_zone">
-        <router-view @notifChanged="notifications=$event"/>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .wrapper
+    .sidebar
+      .Projectus
+        img.logo(src='/assets/img/Logo@3.svg' alt='logo')
+        h1 PROJECTUS
+      #user.user
+        img.user_avatar(:src='User.image' alt='user_avatar')
+        ul.user_info
+          li.user_name {{ User.name }}
+          li.user_status {{ User.status }}
+        .dotdotdot_user
+          div
+          div
+          div
+        // dotdotdot
+      .tasks
+        ul.completed(@click='changeTasks')
+          li.counter {{ completedCount }}
+          li Completed Tasks
+        ul.open
+          li.counter {{ openCount }}
+          li Open Tasks
+      .navigation
+        .notifications
+          p {{notifications}}
+        ul
+          li.menu MENU
+          li.menu_li Home
+          li.menu_li My Tasks
+          li.menu_li Notification
+    .container_column
+      .header
+        .main_header
+          img.shapes(width='40' height='40' alt='logo' src='./assets/img/Shapes@2x.png')
+          h1 Website Redesign
+          .dotdotdot
+            div
+            div
+            div
+          .empty
+          .active_users
+            img(alt='user' src='./assets/img/user_avatar_small.svg')
+            img(alt='user' src='./assets/img/user_avatar_small.svg')
+            img(alt='user' src='./assets/img/user_avatar_small.svg')
+          .share_but
+            div Share
+          .chat_but
+            div Chat
+        .slider
+          nav.nav
+            router-link.nav__link(to='/tasks') Tasks
+            router-link.nav__link(to='/kanban') Kanban
+            router-link.nav__link(to='/activity') Activity
+            router-link.nav__link(to='/calendar') Calendar
+            router-link.nav__link(to='/files') Files
+      .content_zone
+        router-view(@notifchanged='notifications=$event')
 </template>
 
 <script lang="ts">

@@ -1,38 +1,20 @@
-<template>
-  <div class="modal-backdrop">
-    <div class="modal">
-      <header class="modal-header">
-        <slot name="header">
-          12312312312312321313
+<template lang="pug">
+  .modal-backdrop
+    .modal
+      header.modal-header
+        slot(name='header')
+          | 12312312312312321313
+          button.btn-close(type='button' @click='close')
+            | x
+      section.modal-body
+        slot(name='body')
+          | Description
+      footer.modal-footer
+        | Date: 29.10.21
+        slot(name='footer')
+          button.btn-green(type='button' @click='close')
+            | Close task
 
-          <button
-            type="button"
-            class="btn-close"
-            @click="close"
-          >
-            x
-          </button>
-        </slot>
-      </header>
-      <section class="modal-body">
-        <slot name="body">
-          Description
-        </slot>
-      </section>
-      <footer class="modal-footer">
-        Date: 29.10.21
-        <slot name="footer">
-          <button
-            type="button"
-            class="btn-green"
-            @click="close"
-          >
-            Close task
-          </button>
-        </slot>
-      </footer>
-    </div>
-  </div>
 </template>
 
 <script>

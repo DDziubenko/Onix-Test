@@ -1,10 +1,9 @@
-<template>
-  <div class="content_box">
-    <div class="content" v-for="(element, index) in tasks" :key="index">
-      <h1 class="task_name" @click="showModal">{{element.taskName}}</h1>
-    </div>
-    <tasks-modal v-show="isModalVisible" @close="closeModal"></tasks-modal>
-  </div>
+<template lang="pug">
+  .content_box
+    .content(v-for='(element, index) in tasks' :key='index')
+      h1.task_name(@click='showModal') {{element.taskName}}
+    tasks-modal(v-show='isModalVisible' @close='closeModal')
+
 </template>
 
 <script>

@@ -1,48 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="js">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Combined Shape@1x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Icon@3x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Logo@3x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Picture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Search@3x.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Shapes@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/user_avatar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/user_avatar_small.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shims-vue.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/activity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/calendar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/files.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/kanban.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Combined Shape@1x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Icon@3x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Logo@3x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Picture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Search@3x.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/Shapes@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/user_avatar.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/user_avatar_small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="ts.external.directory.path" value="D:\projects\vueonix\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Onix-Test\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -94,7 +55,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="920e1986-5b41-49d8-a957-de9111c6cb42" name="Changes" comment="" />
+      <changelist id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue" />
       <created>1635424786864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -104,7 +65,18 @@
       <workItem from="1635436440861" duration="5337000" />
       <workItem from="1635500667142" duration="7595000" />
       <workItem from="1635511730861" duration="242000" />
+      <workItem from="1635584776832" duration="538000" />
+      <workItem from="1635863543891" duration="594000" />
+      <workItem from="1635935024286" duration="606000" />
     </task>
+    <task id="LOCAL-00001" summary="vue">
+      <created>1635512358110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635512358110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +93,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue" />
   </component>
 </project>
