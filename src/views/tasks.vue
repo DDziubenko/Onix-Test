@@ -1,12 +1,12 @@
 <template lang="pug">
 .content_box
   .content(v-for='(element, index) in tasks' :key='index')
-    h1.task_name(@click='showModal') {{Tasks.name}}
+    h1.task_name(@click='showModal') {{element.taskname}}
   tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
 
-<script>
+<script lang="ts">
 
 import tasksModal from '../components/modals/tasksModal.vue'
 import { TasksInterface } from '../types/tasksInterface'
