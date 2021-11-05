@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue-pug">
+      <change afterPath="$PROJECT_DIR$/src/types/tasksInterface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/activity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/activity.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +14,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jsLEsson" />
+        <entry key="$PROJECT_DIR$" value="vue" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +66,10 @@
       <workItem from="1635584776832" duration="538000" />
       <workItem from="1635863543891" duration="594000" />
       <workItem from="1635935024286" duration="1187000" />
-      <workItem from="1635945191430" duration="734000" />
+      <workItem from="1635945191430" duration="1109000" />
+      <workItem from="1636047428995" duration="2299000" />
+      <workItem from="1636059878396" duration="2704000" />
+      <workItem from="1636110706017" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="vue">
       <created>1635512358110</created>
@@ -86,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635935808948</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="vue-pug">
+      <created>1635946115665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635946115665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
