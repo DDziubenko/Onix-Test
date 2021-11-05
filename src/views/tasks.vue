@@ -1,16 +1,18 @@
 <template lang="pug">
 .content_box
   .content(v-for='(element, index) in tasks' :key='index')
-    h1.task_name(@click='showModal') {{element.taskName}}
+    h1.task_name(@click='showModal') {{element.taskname}}
   tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
 
-<script>
+<script lang="ts">
 
 import tasksModal from '../components/modals/tasksModal.vue'
+import { TasksInterface } from '../types/tasksInterface'
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   name: 'tasks',
   components: {
     tasksModal
@@ -18,38 +20,10 @@ export default {
   data () {
     return {
       isModalVisible: false,
-      tasks: [
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '3333333333'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        },
-        {
-          taskName: '123123123'
-        }
-      ]
+      tasks: [{ taskname: '123123' },
+        { taskname: '123123' },
+        { taskname: '123123' },
+        { taskname: '123123' }] as TasksInterface[]
     }
   },
   methods: {
@@ -60,7 +34,7 @@ export default {
       this.isModalVisible = false
     }
   }
-}
+})
 </script>
 
 <style scoped>
