@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="vue-pug">
+    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="interface">
+      <change afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sidebar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="TypeScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -70,6 +74,8 @@
       <workItem from="1636059878396" duration="2704000" />
       <workItem from="1636110706017" duration="3154000" />
       <workItem from="1636118052038" duration="74000" />
+      <workItem from="1636477801825" duration="2494000" />
+      <workItem from="1636627678512" duration="1867000" />
     </task>
     <task id="LOCAL-00001" summary="vue">
       <created>1635512358110</created>

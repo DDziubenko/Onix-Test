@@ -1,92 +1,12 @@
 <template lang="pug">
-.wrapper
-  .sidebar
-    .Projectus
-      img.logo(src='./assets/img/Logo@3x.svg' alt='logo')
-      h1 PROJECTUS
-    #user.user
-      img.user_avatar(:src='User.image' alt='user_avatar')
-      ul.user_info
-        li.user_name {{ User.name }}
-        li.user_status {{ User.status }}
-      .dotdotdot_user
-        div
-        div
-        div
-      // dotdotdot
-    .tasks
-      ul.completed(@click='changeTasks')
-        li.counter {{ completedCount }}
-        li Completed Tasks
-      ul.open
-        li.counter {{ openCount }}
-        li Open Tasks
-    .navigation
-      .notifications
-        p {{notifications}}
-      ul
-        li.menu MENU
-        li.menu_li Home
-        li.menu_li My Tasks
-        li.menu_li Notification
-  .container_column
-    .header
-      .main_header
-        img.shapes(width='40' height='40' alt='logo' src='./assets/img/Shapes@2x.png')
-        h1 Website Redesign
-        .dotdotdot
-          div
-          div
-          div
-        .empty
-        .active_users
-          img(alt='user' src='./assets/img/user_avatar_small.svg')
-          img(alt='user' src='./assets/img/user_avatar_small.svg')
-          img(alt='user' src='./assets/img/user_avatar_small.svg')
-        .share_but
-          div Share
-        .chat_but
-          div Chat
-      .slider
-        nav.nav
-          router-link.nav__link(to='/tasks') Tasks
-          router-link.nav__link(to='/kanban') Kanban
-          router-link.nav__link(to='/activity') Activity
-          router-link.nav__link(to='/calendar') Calendar
-          router-link.nav__link(to='/files') Files
-    .content_zone
-      router-view(@notifchanged='notifications=$event')
+router-view
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'App',
-  components: {},
-  data (): Record<string, any> {
-    return {
-      notifications: 3,
-      completedCount: 237,
-      openCount: 10,
-      User: {
-        image: require('./assets/img/user_avatar.svg'),
-        name: 'Jean Gonzales',
-        status: 'Product Owner'
-      }
-    }
-  },
-  methods: {
-    changeTasks () {
-      if (this.openCount > 0) {
-        const submit = confirm('Are you sure you want to change the number of tasks?')
-        if (submit && this.openCount > 0) {
-          this.completedCount++
-          this.openCount--
-        }
-      }
-    }
-  }
+  name: 'App'
 })
 </script>
 
