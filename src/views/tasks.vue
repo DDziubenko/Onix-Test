@@ -1,7 +1,12 @@
 <template lang="pug">
 .content_box
+  form.addForm(onsubmit="return false" action="/")
+    input(required v-model="newtask.taskname" placeholder="Name")
+    textarea(required cols="40" rows="3" v-model="newtask.taskdescription" placeholder="Description")
+    input(id="addTask" type="submit" value="Add task" @click="onSubmit")
   .content(v-for='(element, index) in tasks' :key='index')
     h1.task_name(@click='showModal') {{element.taskname}}
+    .delete(@click='onDelete(index)') x
   tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
@@ -20,10 +25,26 @@ export default defineComponent({
   data () {
     return {
       isModalVisible: false,
-      tasks: [{ taskname: '123123' },
-        { taskname: '123123' },
-        { taskname: '123123' },
-        { taskname: '123123' }] as TasksInterface[]
+      tasks: [{
+        taskname: '11111111',
+        taskdescription: '1'
+      },
+      {
+        taskname: '2222222222',
+        taskdescription: '1'
+      },
+      {
+        taskname: '33333333333333',
+        taskdescription: '1'
+      },
+      {
+        taskname: '444444444444',
+        taskdescription: '1'
+      }] as TasksInterface[],
+      newtask: {
+        taskname: '',
+        taskdescription: ''
+      } as TasksInterface
     }
   },
   methods: {
@@ -32,6 +53,13 @@ export default defineComponent({
     },
     closeModal () {
       this.isModalVisible = false
+    },
+    onSubmit () {
+      this.tasks.push(this.newtask)
+      this.newtask = { taskname: '', taskdescription: '' }
+    },
+    onDelete (index: number) {
+      this.tasks.splice(index, 1)
     }
   }
 })
@@ -67,4 +95,37 @@ export default defineComponent({
   line-height: 24px;
 }
 
+.addForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addForm input {
+  margin: 10px;
+  background-color: #4AAE9B;
+  border-radius: 8px;
+  min-height: 20px;
+}
+
+#addTask {
+  min-height: 40px;
+  width: 60px;
+  align-self: center;
+}
+
+.delete {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 100%;
+  background-color: #FF0000;
+  right: 0;
+  position: absolute;
+  font-size: 10px;
+  font-family: Helvetica;
+  color: #EAEAEA;
+  justify-content: center;
+  align-items: center;
+}
 </style>

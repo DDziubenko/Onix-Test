@@ -20,21 +20,29 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '/kanban',
         name: 'kanban',
-        component: () => import(/* webpackChunkName: "kanban" */ '../views/kanban.vue')
+        component: () => import(/* webpackChunkName: "kanban" */ '../components/ComingSoon.vue')
       },
       {
         path: '/files',
         name: 'files',
-        component: () => import(/* webpackChunkName: "files" */ '../views/files.vue')
+        component: () => import(/* webpackChunkName: "files" */ '../components/ComingSoon.vue')
       },
       {
         path: '/calendar',
         name: 'calendar',
-        component: () => import(/* webpackChunkName: "calendar" */ '../views/calendar.vue')
+        component: () => import(/* webpackChunkName: "calendar" */ '../components/ComingSoon.vue')
       }
     ]
+  },
+  {
+    path: '/404',
+    name: 'PageNotFound',
+    component: () => import(/* webpackChunkName: "PageNotFound" */ '../components/PageNotFound.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/404'
   }
-
 ]
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

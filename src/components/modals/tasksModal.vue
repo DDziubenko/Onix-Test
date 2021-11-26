@@ -1,19 +1,17 @@
 <template lang="pug">
 .modal-backdrop
   .modal
-    header.modal-header
-      slot(name='header')
-        | 12312312312312321313
-        button.btn-close(type='button' @click='close')
-          | x
-    section.modal-body
-      slot(name='body')
-        | Description
-    footer.modal-footer
-      | Date: 29.10.21
-      slot(name='footer')
-        button.btn-green(type='button' @click='close')
-          | Close task
+    .header
+      | Placeholder
+    hr
+    .description
+      | Placeholder
+    hr
+    .buttons
+      .close(@click="close")
+        | x
+      .deleteTask(@click="deleteTask")
+        | close task
 
 </template>
 
@@ -24,6 +22,9 @@ export default {
   methods: {
     close () {
       this.$emit('close')
+    },
+    deleteTask () {
+      alert('This button not work')
     }
   }
 }
@@ -48,45 +49,41 @@ export default {
   overflow-x: auto;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
 }
 
-.modal-header,
-.modal-footer {
-  padding: 15px;
+hr {
+  border: none;
+  background-color: #000000;
+  color: #000000;
+  height: 2px;
+}
+
+.header {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.description {
+  padding: 30px;
+}
+
+.buttons {
   display: flex;
 }
 
-.modal-header {
-  border-bottom: 1px solid #eeeeee;
-  color: #4AAE9B;
-  justify-content: space-between;
-}
-
-.modal-footer {
-  border-top: 1px solid #eeeeee;
-  justify-content: flex-end;
-}
-
-.modal-body {
-  position: relative;
-  padding: 20px 10px;
-}
-
-.btn-close {
-  border: none;
+.close {
+  cursor: pointer;
   font-size: 20px;
   padding: 20px;
+}
+
+.deleteTask{
+  padding: 20px;
+  font-size: 14px;
   cursor: pointer;
-  font-weight: bold;
-  color: #4AAE9B;
-  background: transparent;
+  align-self: center;
 }
-
-.btn-green {
-  color: white;
-  background: #4AAE9B;
-  border: 1px solid #4AAE9B;
-  border-radius: 2px;
-}
-
 </style>

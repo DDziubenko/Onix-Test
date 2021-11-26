@@ -17,7 +17,7 @@
     ul.completed(@click='changeTasks')
       li.counter {{ completedCount }}
       li Completed Tasks
-    ul.open
+    ul.open(@click="openTasks")
       li.counter {{ openCount }}
       li Open Tasks
   .navigation
@@ -55,6 +55,11 @@ export default defineComponent({
           this.completedCount++
           this.openCount--
         }
+      }
+    },
+    openTasks () {
+      if (this.openCount > 0) {
+        window.location.href = 'tasks'
       }
     }
   }
