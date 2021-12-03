@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="components">
-      <change afterPath="$PROJECT_DIR$/src/components/ComingSoon.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageNotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ComingSoon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ComingSoon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageNotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PageNotFound.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/tasksModal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/tasksInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/tasksInterface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +52,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\vueonix\src\assets\img" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Onix-Test\src\views" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,6 +83,7 @@
       <workItem from="1637685715108" duration="3060000" />
       <workItem from="1637776957736" duration="174000" />
       <workItem from="1637923337749" duration="9588000" />
+      <workItem from="1638533987490" duration="4210000" />
     </task>
     <task id="LOCAL-00001" summary="vue">
       <created>1635512358110</created>

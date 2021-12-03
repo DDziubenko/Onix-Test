@@ -1,12 +1,13 @@
-<template lang="pug">
+<template lang="pug" xmlns:v-bind="">
 .content_box
   form.addForm(onsubmit="return false" action="/")
     input(required v-model="newtask.taskname" placeholder="Name")
     textarea(required cols="40" rows="3" v-model="newtask.taskdescription" placeholder="Description")
     input(id="addTask" type="submit" value="Add task" @click="onSubmit")
-  .content(v-for='(element, index) in tasks' :key='index')
-    h1.task_name(@click='showModal') {{element.taskname}}
-    .delete(@click='onDelete(index)') x
+  transition-group(name="list" duratation="10000")
+    .content( :class="{ cShow : isMounted }" v-for='(element, index) in tasks' :key='index')
+      h1.task_name(@click='showModal') {{element.taskname}}
+      .delete(@click='onDelete(index)') x
   tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
@@ -24,23 +25,9 @@ export default defineComponent({
   },
   data () {
     return {
+      isMounted: false,
       isModalVisible: false,
-      tasks: [{
-        taskname: '11111111',
-        taskdescription: '1'
-      },
-      {
-        taskname: '2222222222',
-        taskdescription: '1'
-      },
-      {
-        taskname: '33333333333333',
-        taskdescription: '1'
-      },
-      {
-        taskname: '444444444444',
-        taskdescription: '1'
-      }] as TasksInterface[],
+      tasks: [] as TasksInterface[],
       newtask: {
         taskname: '',
         taskdescription: ''
@@ -56,11 +43,39 @@ export default defineComponent({
     },
     onSubmit () {
       this.tasks.push(this.newtask)
-      this.newtask = { taskname: '', taskdescription: '' }
+      this.newtask = {
+        taskname: '',
+        taskdescription: ''
+      }
     },
     onDelete (index: number) {
       this.tasks.splice(index, 1)
     }
+  },
+  mounted () {
+    setTimeout(() => {
+      this.tasks = [
+        {
+          taskname: '1',
+          taskdescription: '1'
+        },
+        {
+          taskname: '2',
+          taskdescription: '1'
+        },
+        {
+          taskname: '3',
+          taskdescription: '1'
+        },
+        {
+          taskname: '4',
+          taskdescription: '1'
+        }
+      ]
+    }, 500)
+    setTimeout(() => {
+      this.isMounted = true
+    }, 1000)
   }
 })
 </script>
@@ -88,6 +103,8 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity: 0;
+  transition: all 1s ease;
 }
 
 .task_name {
@@ -127,5 +144,15 @@ export default defineComponent({
   color: #EAEAEA;
   justify-content: center;
   align-items: center;
+}
+
+.cShow {
+  animation: cShow 2s;
+  opacity: 1;
+}
+@keyframes cShow {
+  0% {transform: scale(1)}
+  50% { transform: scale(1.2)}
+  100% { transform: scale(1)}
 }
 </style>

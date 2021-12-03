@@ -32,6 +32,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import router from '@/router'
 
 export default defineComponent({
   name: 'Sidebar',
@@ -59,7 +60,7 @@ export default defineComponent({
     },
     openTasks () {
       if (this.openCount > 0) {
-        window.location.href = 'tasks'
+        router.push('/')
       }
     }
   }
