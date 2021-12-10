@@ -1,8 +1,12 @@
-<template>
-kanban
+<template lang="pug">
+.content_box
+  .table
+    .todo
+    .inprogress
+    .
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: 'kanban'
 }

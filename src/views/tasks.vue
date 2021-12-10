@@ -3,17 +3,28 @@
   form.addForm(onsubmit="return false" action="/")
     input(required v-model="newtask.taskname" placeholder="Name")
     textarea(required cols="40" rows="3" v-model="newtask.taskdescription" placeholder="Description")
+    .radioArea
+      input(required type="radio" name="status" value="todo" checked v-model="newtask.status")/
+      p ToDo
+      input(required type="radio" name="status" value="inprogress" v-model="newtask.status")/
+      p In progress
+      input(required type="radio" name="status" value="done" v-model="newtask.status")/
+      p Done
+
     input(id="addTask" type="submit" value="Add task" @click="onSubmit")
-  transition-group(name="list" duratation="10000")
-    .content( :class="{ cShow : isMounted }" v-for='(element, index) in tasks' :key='index')
-      h1.task_name(@click='showModal') {{element.taskname}}
-      .delete(@click='onDelete(index)') x
+    transition(name="fade")
+      .container(v-if="tasks.length")
+        .content(v-for='(element, index) in tasks' :key="index" :class="{ newTs : index===0 }")
+          h1.task_name(@click='showModal') {{element.taskname}}
+          .delete(@click='onDelete(index)') x
   tasks-modal(v-show='isModalVisible' @close='closeModal')
 
 </template>
 
 <script lang="ts">
 
+import useVuelidate from '@vuelidate/core'
+import { required } from '@vuelidate/validators'
 import tasksModal from '../components/modals/tasksModal.vue'
 import { TasksInterface } from '../types/tasksInterface'
 import { defineComponent } from 'vue'
@@ -25,13 +36,24 @@ export default defineComponent({
   },
   data () {
     return {
-      isMounted: false,
+      v$: useVuelidate(),
+      isCreated: false,
       isModalVisible: false,
       tasks: [] as TasksInterface[],
       newtask: {
         taskname: '',
-        taskdescription: ''
+        taskdescription: '',
+        isNew: true,
+        status: 'todo'
       } as TasksInterface
+    }
+  },
+  validations () {
+    return {
+      newtask: {
+        taskname: { required },
+        taskdescription: { required }
+      }
     }
   },
   methods: {
@@ -42,45 +64,58 @@ export default defineComponent({
       this.isModalVisible = false
     },
     onSubmit () {
-      this.tasks.push(this.newtask)
-      this.newtask = {
-        taskname: '',
-        taskdescription: ''
+      this.v$.$validate()
+      if (!this.v$.$error) {
+        this.tasks.unshift(Object.assign(this.newtask))
+        this.newtask = {
+          taskname: '',
+          taskdescription: '',
+          isNew: true,
+          status: 'todo'
+        }
       }
     },
     onDelete (index: number) {
       this.tasks.splice(index, 1)
     }
   },
-  mounted () {
+  created () {
     setTimeout(() => {
       this.tasks = [
         {
           taskname: '1',
-          taskdescription: '1'
+          taskdescription: '1',
+          isNew: false,
+          status: 'inprogress'
         },
         {
           taskname: '2',
-          taskdescription: '1'
+          taskdescription: '1',
+          isNew: false,
+          status: 'inprogress'
         },
         {
           taskname: '3',
-          taskdescription: '1'
+          taskdescription: '1',
+          isNew: false,
+          status: 'inprogress'
         },
         {
           taskname: '4',
-          taskdescription: '1'
+          taskdescription: '1',
+          isNew: false,
+          status: 'inprogress'
         }
-      ]
+      ] as TasksInterface[]
     }, 500)
     setTimeout(() => {
-      this.isMounted = true
+      this.isCreated = true
     }, 1000)
   }
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content_box {
   position: relative;
   display: flex;
@@ -103,7 +138,6 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  opacity: 0;
   transition: all 1s ease;
 }
 
@@ -146,13 +180,39 @@ export default defineComponent({
   align-items: center;
 }
 
-.cShow {
-  animation: cShow 2s;
-  opacity: 1;
+.radioArea {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 14px;
 }
-@keyframes cShow {
-  0% {transform: scale(1)}
-  50% { transform: scale(1.2)}
-  100% { transform: scale(1)}
+
+.radioArea p {
+  padding-top: 12px;
+}
+
+.newTs {
+  border: 1px #ffffff solid;
+  animation: blink 3s;
+  animation-iteration-count: 3;
+}
+@keyframes blink {
+  50% {border-color: #9B9B9B} }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s ease;
+
+  ::v-deep .content {
+    transition: all 2s ease;
+  }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 1;
+
+  ::v-deep .content {
+    transform: scale(1.2);
+  }
 }
 </style>

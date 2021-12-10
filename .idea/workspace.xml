@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="components">
+    <list default="true" id="dcf83644-107f-4559-b209-eb5dbc7132f1" name="Changes" comment="animations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ComingSoon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ComingSoon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageNotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PageNotFound.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/tasksInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/tasksInterface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/kanban.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/kanban.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/tasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/tasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vue-pug" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,7 +83,12 @@
       <workItem from="1637685715108" duration="3060000" />
       <workItem from="1637776957736" duration="174000" />
       <workItem from="1637923337749" duration="9588000" />
-      <workItem from="1638533987490" duration="4210000" />
+      <workItem from="1638533987490" duration="4950000" />
+      <workItem from="1639140594968" duration="3033000" />
+      <workItem from="1639143662741" duration="1664000" />
+      <workItem from="1639145356311" duration="2809000" />
+      <workItem from="1639148206100" duration="3063000" />
+      <workItem from="1639151303820" duration="5466000" />
     </task>
     <task id="LOCAL-00001" summary="vue">
       <created>1635512358110</created>
@@ -120,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636629630336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="animations">
+      <created>1638538269323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638538269323</updated>
+    </task>
+    <task id="LOCAL-00007" summary="animations">
+      <created>1638538310074</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638538310074</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +161,7 @@
     <MESSAGE value="vue" />
     <MESSAGE value="vue-pug" />
     <MESSAGE value="components" />
-    <option name="LAST_COMMIT_MESSAGE" value="components" />
+    <MESSAGE value="animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="animations" />
   </component>
 </project>
